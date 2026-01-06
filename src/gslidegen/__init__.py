@@ -12,6 +12,8 @@ pdf
     PDF utilities for page extraction and image conversion.
 drive
     Google Drive client for file uploads and sharing.
+sheets
+    Google Sheets client for spreadsheet operations.
 """
 
 from gslidegen.pdf.utils import extract_page, get_page_count, page_to_image
@@ -19,6 +21,7 @@ from gslidegen.tableau.client import TableauClient
 from gslidegen.tableau.config import TableauConfig
 from gslidegen.tableau.enums import Orientation, PageType
 from gslidegen.drive.client import GoogleDriveClient, upload_image, upload_image_oauth
+from gslidegen.sheets.client import GoogleSheetsClient, read_data, write_data
 
 __all__ = [
     "TableauClient",
@@ -31,4 +34,7 @@ __all__ = [
     "GoogleDriveClient",
     "upload_image",
     "upload_image_oauth",
+    "GoogleSheetsClient",
+    "read_data",
+    "write_data",
 ]
